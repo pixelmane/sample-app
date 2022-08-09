@@ -109,10 +109,14 @@ code {
   
   
 }
-input{
+input {
   height: 20px;
   margin-top: 5px;
-  
+  width: 200px;
+}
+textarea {
+  width: 200px;
+  height: 100px;
 }
 #contactForm {
   background-color: rgb(246, 137, 137);
@@ -307,6 +311,9 @@ text-align: left;
 }
 
 #theForm {
-  margin-top: -50px;
   
+  background-color: rgb(246, 137, 137);
+  width: 350px;
+  margin: auto;
+  padding: 10px 30px;
 }
