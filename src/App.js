@@ -51,13 +51,13 @@ function Contact() {
     <div id='contactCont'>
       <h1 className='hours'>contact</h1>
       </div>
-      <form name='myForm' id='contactForm' data-netlify="true">
+      <form method=' POST'name='myForm' id='contactForm' data-netlify="true">
         <input placeholder='email' type='text'></input>
        <input placeholder='name' type='text'></input>
        <textarea style={{height: '80px'}} placeholder='message' type='text'></textarea>
        <button type="submit" id='submit'>Submit</button>
       </form>
-      <form name="contact" netlify>
+      <form name="contact" data-netlify="true">
   <p>
     <label>Name <input type="text" name="name" /></label>
   </p>
