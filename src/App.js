@@ -151,7 +151,7 @@ function PlantBased() {
 }
 function Home() {
   return (
-    <div>
+    <div id='homeCont'>
       <div className='hoursCont'>
       <h1 className='hours'>hours</h1>
       <div id='schedule'>
@@ -199,6 +199,7 @@ function Home() {
       <h2>Columbus, OH 43205</h2>
       </div>
       </div>
+      
   )
 }
 export default App;

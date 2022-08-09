@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: calc(var(--widthVar)*1px);
   
 }
 * {
@@ -17,7 +18,7 @@ code {
     monospace;
 }
 :root {
-  
+  width: calc(var(--widthVar)*1px);
   display: flex;
   justify-content: center;
 }
@@ -46,7 +47,7 @@ code {
   background-image: url('./mainlogo.png');
   background-position:center;
   background-size: cover;
-  width: 100vw;
+  width: calc(var(--widthVar)*1px);
   height: 300px;
   
 }
@@ -65,11 +66,10 @@ code {
   
   border-top: 1.5px solid black;
   border-radius: 10px;
-  
+  margin: auto;
   width: calc(var(--widthVar)*1px);
   margin-top: 25px;
-  margin-left: 10px;
-  margin-right: 10px;
+  
   
 }
 
@@ -83,8 +83,7 @@ code {
   height: 30px;
   width: calc(var(--widthVar)*1px);
   margin-top: -50px;
-  margin-left: 10px;
-  margin-right: 10px;
+  
   
 }
 #addressBlock {
@@ -93,7 +92,7 @@ code {
   justify-content: center;
 }
 #addressBlock h2 {
-  width: 100%;
+  width: calc(var(--widthVar)*1px);
 }
 #menuCont {
   display: flex;
@@ -105,8 +104,7 @@ code {
   height: 20px;
   width: calc(var(--widthVar)*1px);
   margin-top: 25px;
-  margin-left: 10px;
-  margin-right: 10px;
+  
   
 }
 input{
@@ -146,8 +144,7 @@ textarea {
   
   width: calc(var(--widthVar)*1px);
   margin-top: 25px;
-  margin-left: 10px;
-  margin-right: 10px;
+  
   
 }
 #schedule {
@@ -174,7 +171,7 @@ textarea {
   width:fit-content;
 }
 #daysCont {
-  width: var(--widthVar);
+  width: calc(var(--widthVar)*1px);
   display: grid;
   grid-template:  1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
   
@@ -194,7 +191,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   font-size: calc(var(--widthVar) * .04px);
-  width: 100%;
+  width: calc(var(--widthVar)*1px);
   background-color: rgb(246, 137, 137);
   color: white;
   font-weight: 600;
