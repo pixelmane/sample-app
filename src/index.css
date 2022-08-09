@@ -198,16 +198,21 @@ h2 {
   margin-top: 10px;
   display: flex;
   justify-content: space-around;
-  
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .menuType {
   background-color: rgb(92, 112, 80);
   color: white;
+  font-weight: 600;
   border-radius: 10px;
   padding: 5px 10px;
+  
 }
-
+:Link {
+  text-decoration:none;
+}
 #menuPicCont {
   margin-top: 10px;
   display: flex;
