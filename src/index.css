@@ -63,7 +63,7 @@ code {
   
   border-top: 1.5px solid black;
   border-radius: 10px;
-  height: 40vw;
+  
   width: calc(var(--widthVar)*1px);
   margin-top: 25px;
   margin-left: 10px;
@@ -75,9 +75,7 @@ code {
   position: relative;
   top: -75px;
 }
-h2 {
-  width: fit-content;
-}
+
 #hours {
   position: relative;
   top: -43px;
@@ -90,7 +88,7 @@ h2 {
 }
 
 .days {
-  font-size: calc(.03 * var(--widthVar));
+  font-size: calc(.04px * var(--widthVar));
   margin: 0px;
   color: rgb(92, 112, 80);
   width:fit-content;
@@ -107,7 +105,7 @@ h2 {
 }
 
 h2 {
-  font-size: 3vw;
+  font-size: calc(var(--widthVar) *.04px);
   margin: 0px;
   width: fit-content;
 }
@@ -115,7 +113,7 @@ h2 {
 #happyHour {
   display: flex;
   flex-wrap: wrap;
-  font-size: 3vw;
+  font-size: calc(var(--widthVar) * .04px);
   width: 100%;
   background-color: rgb(246, 137, 137);
   color: white;
