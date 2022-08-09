@@ -295,9 +295,18 @@ h2 {
   text-overflow: unset;
   color: white;
   margin-bottom: 10px;
-  margin-right: 80px;
-  flex: 1;
+  margin-left: 20px;
+  
   width: 100%;
   justify-self:flex-start ;
  
+}
+#phoneCont {
+flex: 1;
+text-align: left;
+}
+
+#theForm {
+  margin-top: -50px;
+  
 }

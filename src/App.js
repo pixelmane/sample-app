@@ -35,7 +35,7 @@ function App() {
                 isActive ? activeStyle : inactiveStyle} to='/contact' ><div id='contactLink'>Contact</div></NavLink>
         <a href='https://www.order.store/store/addellas-on-oak/_deV1dJoTAqA3HbtZiG_Dg' target='_blank' rel='noreferrer'><div id='delivery'>Delivery</div></a>
       </header>
-      <div id='banner'><h2 id="phone">ph:614 928 3032</h2><a href='https://www.facebook.com/addellasonoak/' target='_blank' rel='noreferrer'><div id='social1'></div></a><a href='https://www.instagram.com/addellas614/' target='_blank' rel='noreferrer'><div id='social2'></div></a></div>
+      <div id='banner'><div id='phoneCont'><a href='tel:614-928-3032'><h2 id="phone">ph:614-928-3032</h2></a></div><a href='https://www.facebook.com/addellasonoak/' target='_blank' rel='noreferrer'><div id='social1'></div></a><a href='https://www.instagram.com/addellas614/' target='_blank' rel='noreferrer'><div id='social2'></div></a></div>
       <Routes>
         <Route path='/' element={<Home />} /> 
         <Route path='/menu/*' element ={<Menu />} />
@@ -52,7 +52,7 @@ function Contact() {
     <div id='contactCont'>
       <h1 className='hours'>contact</h1>
       </div>
-      <form name="contact" method="post">
+      <form id='theForm' name="contact" method="post">
       <input type="hidden" name="form-name" value="contact" />
           <p>
             <label>Your Name: <input type="text" name="name"/></label>
