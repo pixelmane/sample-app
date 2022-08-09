@@ -25,7 +25,8 @@ code {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: calc(var(--widthVar)*1px)
+  width: calc(var(--widthVar)*1px);
+  
 }
 #navBar {
   
@@ -56,11 +57,25 @@ code {
   border-radius: 10px;
 }
 
-#hoursCont {
+.hoursCont {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   
+  border-top: 1.5px solid black;
+  border-radius: 10px;
+  
+  width: calc(var(--widthVar)*1px);
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+#menuCont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 20px;
   border-top: 1.5px solid black;
   border-radius: 10px;
   
@@ -76,7 +91,7 @@ code {
   top: -75px;
 }
 
-#hours {
+.hours {
   position: relative;
   top: -43px;
   background-color: white;
@@ -140,4 +155,61 @@ h2 {
   background-position: 50% 57%;
   margin-bottom: 10px;
   margin-right: 10px;
+}
+
+.plantPic {
+  background-image: url('./menu_plantbased.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+  width: calc(1px * var(--widthVar));
+  height: 1000px;
+
+}
+.menuPic {
+  background-image: url('./menu_menu.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+  width: calc(1px * var(--widthVar));
+  height: 1000px;
+
+}
+.drinksPic {
+  background-image: url('./menu_drinks.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+  width: calc(1px * var(--widthVar));
+  height: 1000px;
+
+}
+.brunchPic {
+  background-image: url('./menu_brunch.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+  width: calc(1px * var(--widthVar));
+  height: 1000px;
+
+}
+
+#menuNavs {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.menuType {
+  background-color: rgb(92, 112, 80);
+  color: white;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+#menuPicCont {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
 }
