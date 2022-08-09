@@ -41,7 +41,7 @@ code {
 #banner {
   display: flex;
   align-items: flex-end;
-  justify-content: end;
+  justify-content: flex-end;
   background-image: url('./mainlogo.png');
   background-position:center;
   background-size: cover;
@@ -60,7 +60,7 @@ code {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: ;
+  
   border-top: 1.5px solid black;
   border-radius: 10px;
   height: 40vw;

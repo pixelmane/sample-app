@@ -23,9 +23,9 @@ function App() {
         <Link to='/'><div>Home</div></Link>
         <div>Menu</div>
         <div>Contact</div>
-        <a href='https://www.order.store/store/addellas-on-oak/_deV1dJoTAqA3HbtZiG_Dg' target='_blank'><div id='delivery'>Delivery</div></a>
+        <a href='https://www.order.store/store/addellas-on-oak/_deV1dJoTAqA3HbtZiG_Dg' target='_blank' rel='noreferrer'><div id='delivery'>Delivery</div></a>
       </header>
-      <div id='banner'><a href='https://www.facebook.com' target='_blank'><div id='social1'></div></a><a href='https://www.instagram.com' target='_blank'><div id='social2'></div></a></div>
+      <div id='banner'><a href='https://www.facebook.com' target='_blank' rel='noreferrer'><div id='social1'></div></a><a href='https://www.instagram.com' target='_blank' rel='noreferrer'><div id='social2'></div></a></div>
       <Routes>
         <Route path='/' element={<Home />} /> 
       </Routes>
@@ -46,8 +46,8 @@ function Home() {
           <h2 className='days'>Wednesday</h2><h2 className='times'>12pm - 12am</h2><h2>*HH: 4pm-7pm</h2>
           <h2 className='days'>Thursday</h2><h2 className='times'>12pm - 12am</h2><h2>*HH: 4pm-7pm</h2>
           <h2 className='days'>Friday</h2><h2 className='times'>12pm - 1am</h2><h2>*HH: 4pm-7pm</h2>
-          <h2 className='days'>Saturday</h2><h2 className='times'>12pm - 1am</h2><h2></h2>
-          <h2 className='days'>Sunday</h2><h2 className='times'>12pm - 10pm</h2><h2></h2>
+          <h2 className='days'>Saturday</h2><h2 className='times'>12pm - 1am</h2><h2>--</h2>
+          <h2 className='days'>Sunday</h2><h2 className='times'>12pm - 10pm</h2><h2>--</h2>
         </div>
         <div id='happyHour'>
           *Happy Hour:  $4 drafts, 5$ apps, 5$ wine, 3$ bottles/cans/well drinks
