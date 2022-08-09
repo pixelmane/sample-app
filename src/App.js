@@ -46,9 +46,7 @@ function App() {
   );
 }
 function Contact() {
-  function handleSubmit(e){
-  e.preventDefault()
-  }
+  
   return (
     <div>
     <div id='contactCont'>
@@ -56,14 +54,14 @@ function Contact() {
       </div>
       <form
     data-netlify="true"
-    name="pizzaOrder"
+    name="contact"
     method="post"
-    onSubmit={handleSubmit}
+    
   >
-    <input type="hidden" name="form-name" value="pizzaOrder" />
+    <input type="hidden" name="contact" value="pizzaOrder" />
     <label>
       What order did the pizza give to the pineapple?
-      <input name="order" type="text"  />
+      <input name="name" type="text"  />
     </label>
     <input type="submit" />
   </form>
