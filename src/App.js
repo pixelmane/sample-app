@@ -52,19 +52,20 @@ function Contact() {
     <div id='contactCont'>
       <h1 className='hours'>contact</h1>
       </div>
-      <form
-    data-netlify="true"
-    name="contact"
-    method="post"
-    
-  >
-    <input type="hidden" name="contact" value="pizzaOrder" />
-    <label>
-      What order did the pizza give to the pineapple?
-      <input name="name" type="text"  />
-    </label>
-    <input type="submit" />
-  </form>
+      <form name="contact" method="post">
+          <p>
+            <label>Your Name: <input type="text" name="name"/></label>
+          </p>
+          <p>
+            <label>Your Email: <input type="email" name="email"/></label>
+          </p>
+          <p>
+            <label>Message: <textarea name="message"></textarea></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
      {/*} <form  method='post' name='myForm' id='contactForm' data-netlify="true">
       <input type="hidden" name="form-name" value="pizzaOrder" />
         <input placeholder='email' type='text'></input>
