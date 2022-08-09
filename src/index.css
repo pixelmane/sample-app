@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: calc(var(--widthVar)*1px);
+  
   
 }
 * {
@@ -21,12 +21,14 @@ code {
   width: calc(var(--widthVar)*1px);
   display: flex;
   justify-content: center;
+  margin: auto;
 }
 .App {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: calc(var(--widthVar)*1px);
+  
+ 
   
 }
 #navBar {
