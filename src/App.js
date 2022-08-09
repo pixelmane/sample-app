@@ -18,7 +18,7 @@ window.addEventListener('resize', function resize() {
 function App() {
   
   let activeStyle = {
-    color: 'white', backgroundColor: 'rgb(246, 137, 137)', borderRadius: '10px', padding: '5px 10px'
+    color: 'white', backgroundColor: 'rgb(246, 137, 137)', borderRadius: '10px', padding: '5px 10px', paddingLeft: '10px', paddingRight: '10px'
   }
   let inactiveStyle = {
     color: 'white', borderRadius: '10px', padding: '5px 10px', backgroundColor: 'rgba(0,0,0,.3)', paddingLeft: '10px', paddingRight: '10px'
@@ -51,13 +51,23 @@ function Contact() {
     <div id='contactCont'>
       <h1 className='hours'>contact</h1>
       </div>
-      <form id='contactForm'>
+      <form name='myForm' id='contactForm' data-netlify="true">
         <input placeholder='email' type='text'></input>
        <input placeholder='name' type='text'></input>
        <textarea style={{height: '80px'}} placeholder='message' type='text'></textarea>
-       <button id='submit'>Submit</button>
+       <button type="submit" id='submit'>Submit</button>
       </form>
-    
+      <form name="contact" netlify>
+  <p>
+    <label>Name <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Email <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
     </div>
   )
 }
