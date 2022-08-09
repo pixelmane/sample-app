@@ -47,7 +47,7 @@ function App() {
 }
 function Contact() {
   function handleSubmit(e){
-  
+  e.preventDefault()
   }
   return (
     <div>
