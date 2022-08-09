@@ -53,6 +53,7 @@ function Contact() {
       <h1 className='hours'>contact</h1>
       </div>
       <form name="contact" method="post">
+      <input type="hidden" name="form-name" value="contact" />
           <p>
             <label>Your Name: <input type="text" name="name"/></label>
           </p>
