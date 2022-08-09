@@ -60,7 +60,7 @@ function Contact() {
        <textarea style={{height: '80px'}} placeholder='message' type='text'></textarea>
        <button type="submit" id='submit'>Submit</button>
       </form>
-      <form name="contact" data-netlify="true">
+      <form onSubmit={handleSubmit} name="contact" data-netlify="true">
   <p>
     <label>Name <input type="text" name="name" /></label>
   </p>
