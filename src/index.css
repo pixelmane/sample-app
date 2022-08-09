@@ -140,19 +140,7 @@ textarea {
   border-radius: 5px;
   margin-top: 5px;
 }
-#contactCont {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  
-  border-top: 1.5px solid black;
-  border-radius: 10px;
-  
-  width: calc(var(--widthVar)*1px);
-  margin-top: 25px;
-  
-  
-}
+
 #schedule {
   margin: 0px;
   position: relative;
@@ -164,7 +152,7 @@ textarea {
   top: -43px;
   background-color: white;
   width:fit-content;
-  
+  height: 40px;
   padding-left: 10px;
   padding-right: 10px;
   font-weight: 300;
@@ -316,4 +304,19 @@ text-align: left;
   width: 350px;
   margin: auto;
   padding: 10px 30px;
+  margin-top: -50px;
+  
+}
+#contactCont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  border-top: 1.5px solid black;
+  border-radius: 10px;
+  
+  width: calc(var(--widthVar)*1px);
+  margin-top: 25px;
+  
+  
 }
