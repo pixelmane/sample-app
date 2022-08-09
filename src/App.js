@@ -67,7 +67,7 @@ function Contact() {
     </label>
     <input type="submit" />
   </form>
-      <form  method='post' name='myForm' id='contactForm' data-netlify="true">
+     {/*} <form  method='post' name='myForm' id='contactForm' data-netlify="true">
       <input type="hidden" name="form-name" value="pizzaOrder" />
         <input placeholder='email' type='text'></input>
        <input placeholder='name' type='text'></input>
@@ -84,7 +84,7 @@ function Contact() {
   <p>
     <button type="submit">Send</button>
   </p>
-</form>
+  </form> */}
     </div>
   )
 }
