@@ -48,6 +48,7 @@ code {
   background-size: cover;
   width: 100vw;
   height: 300px;
+  
 }
 
 #delivery {
@@ -71,11 +72,75 @@ code {
   margin-right: 10px;
   
 }
+
+#addressCont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  border-top: 1.5px solid black;
+  border-radius: 10px;
+  height: 30px;
+  width: calc(var(--widthVar)*1px);
+  margin-top: -50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+#addressBlock {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#addressBlock h2 {
+  width: 100%;
+}
 #menuCont {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
+  border-top: 1.5px solid black;
+  border-radius: 10px;
   height: 20px;
+  width: calc(var(--widthVar)*1px);
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+input{
+  height: 20px;
+  margin-top: 5px;
+  
+}
+#contactForm {
+  background-color: rgb(246, 137, 137);
+  display: grid;
+  justify-content: center;
+  width: 250px;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px; 
+
+  
+}
+textarea {
+  margin-top: 5px;
+}
+#submit {
+  background-color: rgb(92, 112, 80);
+  color: white;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+#contactCont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
   border-top: 1.5px solid black;
   border-radius: 10px;
   
@@ -217,4 +282,21 @@ h2 {
   margin-top: 10px;
   display: flex;
   justify-content: center;
+}
+
+:NavLink {
+  color: white;
+}
+
+#phone {
+  font-size: 15px;
+  overflow-x: visible;
+  text-overflow: unset;
+  color: white;
+  margin-bottom: 10px;
+  margin-right: 80px;
+  flex: 1;
+  width: 100%;
+  justify-self:flex-start ;
+ 
 }

@@ -1,6 +1,6 @@
 
 import './App.css';
-import { Link, Route, Routes } from 'react-router-dom';
+import { NavLink, Link, Route, Routes } from 'react-router-dom';
 var root = document.querySelector(':root');
 function updateSize () {
   let sizing = window.innerWidth;
@@ -16,31 +16,51 @@ window.addEventListener('resize', function resize() {
   updateSize()
 })
 function App() {
-  function handleClick(e){
-    switch(e.target.id){
-      case 'homeLink':
-      default:
-        
-    }
+  
+  let activeStyle = {
+    color: 'white', backgroundColor: 'rgb(246, 137, 137)', borderRadius: '10px', padding: '5px 10px'
+  }
+  let inactiveStyle = {
+    color: 'white', backgroundColor: 'rgba(0,0,0,0)', paddingLeft: '10px', paddingRight: '10px'
   }
   return (
+    
     <div className="App">
       <header id='navBar'>
-        <Link to='/'><div onClick={handleClick} style={{border: '1px solid black', borderRadius: '10px', paddingLeft: '10px', paddingRight: '10px'}}id='homeLink'>Home</div></Link>
-        <Link to='/menu'><div id='menuLink'>Menu</div></Link>
-        <div id='contactLink'>Contact</div>
+        <NavLink style={({isActive}) => 
+                isActive ? activeStyle : inactiveStyle}  to='/'><div id='homeLink'>Home</div></NavLink>
+        <NavLink style={({isActive}) => 
+                isActive ? activeStyle : inactiveStyle} to='/menu'><div id='menuLink'>Menu</div></NavLink>
+        <NavLink style={({isActive}) => 
+                isActive ? activeStyle : inactiveStyle} to='/contact' ><div id='contactLink'>Contact</div></NavLink>
         <a href='https://www.order.store/store/addellas-on-oak/_deV1dJoTAqA3HbtZiG_Dg' target='_blank' rel='noreferrer'><div id='delivery'>Delivery</div></a>
       </header>
-      <div id='banner'><a href='https://www.facebook.com' target='_blank' rel='noreferrer'><div id='social1'></div></a><a href='https://www.instagram.com' target='_blank' rel='noreferrer'><div id='social2'></div></a></div>
+      <div id='banner'><h2 id="phone">ph:614 928 3032</h2><a href='https://www.facebook.com/addellasonoak/' target='_blank' rel='noreferrer'><div id='social1'></div></a><a href='https://www.instagram.com/addellas614/' target='_blank' rel='noreferrer'><div id='social2'></div></a></div>
       <Routes>
         <Route path='/' element={<Home />} /> 
         <Route path='/menu/*' element ={<Menu />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
       
     </div>
   );
 }
-
+function Contact() {
+  return (
+    <div>
+    <div id='contactCont'>
+      <h1 className='hours'>contact</h1>
+      </div>
+      <form id='contactForm'>
+        <input placeholder='email' type='text'></input>
+       <input placeholder='name' type='text'></input>
+       <textarea style={{height: '80px'}} placeholder='message' type='text'></textarea>
+       <button id='submit'>Submit</button>
+      </form>
+    
+    </div>
+  )
+}
 function Menu() {
   function handleClick(e){
     switch(e.target.id){
@@ -82,7 +102,7 @@ function Menu() {
   return (
     <div>
       <div id='menuCont'>
-        <h1 className='hours'>Menus</h1>
+        <h1 className='hours'>menus</h1>
       </div>
     <div id='menuNavs'>
       
@@ -131,7 +151,7 @@ function PlantBased() {
 }
 function Home() {
   return (
-  
+    <div>
       <div className='hoursCont'>
       <h1 className='hours'>hours</h1>
       <div id='schedule'>
@@ -159,7 +179,26 @@ function Home() {
   */}
       </div>
       </div>
-   
+      <div id='addressCont'>
+      <h1 className='hours'>address</h1>
+      
+        {/*<div id='timesCont'>
+        <h2 className='times'>4pm - 12am</h2>
+          <h2 className='times'>12pm - 12am</h2>
+          <h2 className='times'>12pm - 12am</h2>
+          <h2 className='times'>12pm - 12am</h2>
+          <h2 className='times'>12pm - 1am</h2>
+          <h2 className='times'>12pm - 1am</h2>
+          <h2 className='times'>12pm - 10pm</h2>
+        </div>
+  */}
+      </div>
+      <div id='addressBlock'>
+      <h2>ADDELLA'S ON OAK</h2>
+      <h2>1485 Oak St.</h2>
+      <h2>Columbus, OH 43205</h2>
+      </div>
+      </div>
   )
 }
 export default App;
