@@ -16,14 +16,19 @@ window.addEventListener('resize', function resize() {
   updateSize()
 })
 function App() {
+  function handleClick(e){
+    switch(e.target.id){
+      case 'homeLink':
+      default:
+        
+    }
+  }
   return (
     <div className="App">
       <header id='navBar'>
-
-        <Link to='/'><div>Home</div></Link>
-        
-        <Link to='/menu'><div>Menu</div></Link>
-        <div>Contact</div>
+        <Link to='/'><div onClick={handleClick} style={{border: '1px solid black', borderRadius: '10px', paddingLeft: '10px', paddingRight: '10px'}}id='homeLink'>Home</div></Link>
+        <Link to='/menu'><div id='menuLink'>Menu</div></Link>
+        <div id='contactLink'>Contact</div>
         <a href='https://www.order.store/store/addellas-on-oak/_deV1dJoTAqA3HbtZiG_Dg' target='_blank' rel='noreferrer'><div id='delivery'>Delivery</div></a>
       </header>
       <div id='banner'><a href='https://www.facebook.com' target='_blank' rel='noreferrer'><div id='social1'></div></a><a href='https://www.instagram.com' target='_blank' rel='noreferrer'><div id='social2'></div></a></div>
@@ -63,6 +68,12 @@ function Menu() {
               document.getElementById('drinksIcon').style.backgroundColor = 'rgb(92, 112, 80)'
               document.getElementById('brunchIcon').style.backgroundColor = 'rgb(246, 137, 137)'
               break;
+            default: 
+            document.getElementById('plantBasedIcon').style.backgroundColor = 'rgb(92, 112, 80)'
+          document.getElementById('menuIcon').style.backgroundColor = 'rgb(246, 137, 137)'
+          document.getElementById('drinksIcon').style.backgroundColor = 'rgb(92, 112, 80)'
+          document.getElementById('brunchIcon').style.backgroundColor = 'rgb(92, 112, 80)'
+          break;
         
       }
       }
