@@ -46,12 +46,15 @@ function App() {
   );
 }
 function Contact() {
+  function handleSubmit(e){
+    e.preventDefault()
+  }
   return (
     <div>
     <div id='contactCont'>
       <h1 className='hours'>contact</h1>
       </div>
-      <form method=' POST'name='myForm' id='contactForm' data-netlify="true">
+      <form onSubmit={handleSubmit} method=' POST'name='myForm' id='contactForm' data-netlify="true">
         <input placeholder='email' type='text'></input>
        <input placeholder='name' type='text'></input>
        <textarea style={{height: '80px'}} placeholder='message' type='text'></textarea>
