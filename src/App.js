@@ -55,6 +55,7 @@ function Contact() {
       <h1 className='hours'>contact</h1>
       </div>
       <form onSubmit={handleSubmit} method=' POST'name='myForm' id='contactForm' data-netlify="true">
+      <input type="hidden" name="form-name" value="pizzaOrder" />
         <input placeholder='email' type='text'></input>
        <input placeholder='name' type='text'></input>
        <textarea style={{height: '80px'}} placeholder='message' type='text'></textarea>
