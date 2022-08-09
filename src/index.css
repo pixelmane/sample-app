@@ -199,7 +199,9 @@ h2 {
   border-bottom-right-radius: 10px;
   margin-top: 10px;
 }
-
+.days {
+  padding-left: 10px;
+}
 #social1 {
   background-image: url('./fblogo.png');
   height: 50px;
