@@ -21,7 +21,7 @@ function App() {
     color: 'white', backgroundColor: 'rgb(246, 137, 137)', borderRadius: '10px', padding: '5px 10px'
   }
   let inactiveStyle = {
-    color: 'white', backgroundColor: 'rgba(0,0,0,0)', paddingLeft: '10px', paddingRight: '10px'
+    color: 'white', borderRadius: '10px', padding: '5px 10px', backgroundColor: 'rgba(0,0,0,.3)', paddingLeft: '10px', paddingRight: '10px'
   }
   return (
     
