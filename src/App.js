@@ -47,14 +47,27 @@ function App() {
 }
 function Contact() {
   function handleSubmit(e){
-    e.preventDefault()
+  
   }
   return (
     <div>
     <div id='contactCont'>
       <h1 className='hours'>contact</h1>
       </div>
-      <form onSubmit={handleSubmit} method=' POST'name='myForm' id='contactForm' data-netlify="true">
+      <form
+    data-netlify="true"
+    name="pizzaOrder"
+    method="post"
+    onSubmit={handleSubmit}
+  >
+    <input type="hidden" name="form-name" value="pizzaOrder" />
+    <label>
+      What order did the pizza give to the pineapple?
+      <input name="order" type="text"  />
+    </label>
+    <input type="submit" />
+  </form>
+      <form  method='post' name='myForm' id='contactForm' data-netlify="true">
       <input type="hidden" name="form-name" value="pizzaOrder" />
         <input placeholder='email' type='text'></input>
        <input placeholder='name' type='text'></input>
